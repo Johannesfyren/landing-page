@@ -9,17 +9,21 @@
 <body>
     <div class="container">
         <div class="left-wrapper">
-            <img src="" alt="">
+            <img src="./img/sunset.jpg" alt="sunset image" class="logo" height="100%" >
             <div class="blurred-div">
-                <!-- <img src="./img/sunset.jpg" alt="sunset image" class="logo" width="100px"> -->
-                
+                <img src="./img/odin.png" alt="" width="60px">
+                <p class="logo-text">ODIN</p>
             </div>
             <!-- <p>Photo by <a href="/photographer/arniemateo-50644">arniemateo</a> on <a href="/">Freeimages.com</a></p> -->
         </div>
+
         <div class="right-wrapper">
-            <p>Lorem ipsum</p>
-            <div class="form-container">
-                <form action="">
+            <p class="left-padding big-text">This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams.<br>
+                Sign up now to get started. <br><br> You know you WANT to.
+            </p>
+            <div class="form-container left-padding">
+                <form action="" id="pwinput">
                     <legend>Lets do this!</legend>
                     <div>
                         <label for="firstnameinput">First Name
@@ -30,25 +34,25 @@
                         </label>
                     </div>
                     <div>
-                        <label for="emailinput">Email address
-                            <input type="email" name="emailinput" id="emailinput">
+                        <label for="emailinput">Email address*
+                            <input type="email" name="emailinput" id="emailinput" required>
                         </label>
-                        <label for="phoneinput">Phone Number
-                            <input type="tel" name="phoneinput" id="phoneinput">
+                        <label for="phoneinput">Phone Number*
+                            <input type="tel" name="phoneinput" id="phoneinput" required>
                         </label>
                     </div>
                     <div>
-                        <label for="pwinput">Password
-                            <input type="email" name="pwinput" id="pwinput">
+                        <label for="pwinput">Password*
+                            <input type="password" name="pwinput" id="pwinput" required>
                         </label>
-                        <label for="cpwinput">Confirm Password
-                            <input type="email" name="cpwinput" id="cpwinput">
+                        <label for="cpwinput">Confirm Password*
+                            <input type="password" name="cpwinput" id="cpwinput" required>
                         </label>
                     </div>
                 </form>
             </div>
-            <button></button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <button type="submit" form="pwinput">Create Account</button>
+            <p class="left-padding">Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>

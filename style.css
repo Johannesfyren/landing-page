@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --text-size:24px;
 }
 
 .container{
@@ -15,6 +19,26 @@
 .left-wrapper{
     flex-grow: 0.8;
     background-color: green;
+    flex-shrink: 0;
+   min-width: 400px;
+   max-width: 400px;
+}
+.left-wrapper img{
+    object-fit: contain;
+}
+
+.blurred-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 40%);
+    height: 120px;
+    top: -650px;
+}
+.logo-text{
+    color: white;
+    font-size: 80px;
 }
 
 .right-wrapper{
@@ -23,19 +47,65 @@
     justify-content: center;
     flex-grow: 1;
     flex-shrink: none;
-    background-color: blue;
+    background-color: rgb(235, 235, 235);
+    gap: 40px;
 }
 
 .form-container{
     width: 100%;
     height: 300px;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    box-shadow: 0px 3px 3px rgb(201, 200, 200);
 }
-/* .form-container form{
+.form-container form{
     display: flex;
     width: 100%;
-    flex-flow: row wrap;
-} */
+    flex-direction: column;
+    gap: 20px;
+} 
+.form-container form div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap:50px;
+} 
+
 input {
     display:block;
+    appearance: none;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 200px;
+}
+label{
+    font-size: 14px;
+}
+.left-padding{
+    padding-left:20px;
+}
+legend, .big-text{
+    font-size: var(--text-size);
+}
+
+button{
+    height:40px;
+    width: 170px;
+    margin-left: 20px;
+    background-color: rgb(62, 105, 62);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(61, 200, 247);
+    box-shadow: 0px 0px 7px  rgb(197, 197, 197);
+}
+input[type="password"]:invalid{
+    border:1px solid red;
 }
